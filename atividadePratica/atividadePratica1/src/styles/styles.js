@@ -80,4 +80,13 @@ export default StyleSheet.create({
         fontSize: 16,
         color: '#222',
     },
+      item: {
+    backgroundColor: '#f9c2ff',
+    padding: 20,
+    marginVertical: 8,
+    marginHorizontal: 16,
+  },
+  title2: {
+    fontSize: 32,
+  },
 });

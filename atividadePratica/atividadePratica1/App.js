@@ -9,6 +9,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ModalFadeScreen from './src/screens/ModalFadeScreen.js';
 import ScrollViewScreen from './src/screens/ScrollViewScreen.js';
 import ModalNoneScreen from './src/screens/ModalNoneScreen.js';
+import SectionListScreen from './src/screens/SectionListScreen.js';
+import FlatListScreen from './src/screens/FlatListScreen.js';
+
 
 const Drawer = createDrawerNavigator();
 const Tabs = createBottomTabNavigator();
@@ -28,8 +31,8 @@ function TabsNavigatorScrolls() {
   return (
     <Tabs.Navigator screenOptions={{headerShown: false}}>
       <Tabs.Screen name="ScrollView" component={ScrollViewScreen} />
-      <Tabs.Screen name="FlatList" component={() => <></>} />
-      <Tabs.Screen name="SectionList" component={() => <></>} />
+      <Tabs.Screen name="FlatList" component={FlatListScreen} />
+      <Tabs.Screen name="SectionList" component={SectionListScreen} />
     </Tabs.Navigator>
   );
 }
