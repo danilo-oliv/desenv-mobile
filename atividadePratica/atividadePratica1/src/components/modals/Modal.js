@@ -6,6 +6,7 @@ import {
     TouchableOpacity,
     TouchableWithoutFeedback,
 } from 'react-native';
+
 import styles from '../../styles/styles';
 
 export default function GenericModal({ visible, onClose, animation , text, children }) {
